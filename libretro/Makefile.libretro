@@ -411,6 +411,8 @@ ifeq ($(STATIC_LIBCXX), 1)
 	LDFLAGS += -static-libgcc -static-libstdc++
 endif
 
+LDFLAGS += -lstdc++fs
+
 .PHONY: all
 all: $(TARGET)
 
